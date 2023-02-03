@@ -1,0 +1,12 @@
+{
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=pygame"
+        // permet d'éviter l'erreur afficher par pylint 'pygame as no member [...]'
+        // qui est une fausse alerte et renderait dure de voir les vrai erreur que pylint
+        // pourrait signalé et rendre le code moins difficile à lire
+    ],
+    "files.trimFinalNewlines": true,
+    // permet d'enlever les lignes vide en fin de document (sauf celle conseillier par pylint)
+    "files.trimTrailingWhitespace": true,
+    // retirer les espaces vides (espace, tabulation, ...) en fin de ligne
+}
